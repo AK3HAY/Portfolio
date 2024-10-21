@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekala Akshay's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/my_pic.jpg" alt="My Image" class="profile-image">
+        <h1>Mekala Akshay</h1>
+        <p>
+            <i class="fas fa-envelope"></i> akki73311@gmail.com | 
+            <i class="fas fa-phone"></i> 8688536367
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/mekala-akshay/"><i class="fab fa-linkedin"></i></a> | 
+            <a href="https://github.com/AK3HAY"><i class="fab fa-github"></i></a>
+        </p>
+    </header>
+
+    <nav>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#work-samples">Work Samples</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact Information</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction" class="section">
+        <h2><i class="fas fa-user"></i> Introduction</h2>
+        <p>B.Tech CSE Student | Data Analytics Enthusiast | Python & Power BI Learner | Passionate About AI & Software Innovation</p>
+    </section>
+
+    <section id="work-samples" class="section">
+        <h2><i class="fas fa-laptop-code"></i> Work Samples</h2>
+        <div class="work-sample">
+            <h3>Internship focused on Power BI</h3>
+            <img src="images/internship.jpg" alt="Internship focused on Power BI" class="work-sample-image">
+            <p>Company: CODTECH IT SOLUTIONS </p>
+            <p>Date: August 23, 2024 – September 23, 2024</p>
+            <p>Tools Used: Power BI</p>
+            <p>Description: Gained hands-on experience in data visualization and analytics.</p>
+        </div>
+        <div class="work-sample">
+            <h3>Tic Tac Toe Game</h3>
+            <img src="images/tic_tac_toe.jpg" alt="Tic Tac Toe Game" class="work-sample-image">
+            <p>Company: Tech Sign Solutions</p>
+            <p>Duration: August 19, 2024 - September 6, 2024</p>
+            <p>Tools Used: HTML, CSS, JavaScript</p>
+            <p>Description: Developed a classic Tic Tac Toe game.</p>
+        </div>
+        <div class="work-sample">
+            <h3>Supermarket Billing System</h3>
+            <img src="images/supermarkey.jpg" alt="Supermarket Billing System" class="work-sample-image">
+            <p>Description: Developed a Java program for a supermarket billing system.</p>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <h2><i class="fas fa-file-alt"></i> Resume</h2>
+        <p>You can view and download my resume here: <a href="https://drive.google.com/file/d/1bbN-6n503dQd49l2OeCiuyScpVskLEGj/view?usp=sharing" target="_blank">Download Resume</a></p>
+        <h3>Professional Summary</h3>
+        <p>Third-year B.Tech student specializing in Computer Science and Engineering. I have hands-on experience in academic projects, team collaborations, and classroom presentations. Currently, I am expanding my skills in Power BI and Python, aiming to leverage my analytical and technical expertise to drive innovation in the tech industry.</p>
+    </section>
+
+    <footer id="contact" class="section">
+        <h2><i class="fas fa-address-book"></i> Contact Information</h2>
+        <p>
+            <i class="fas fa-envelope"></i> akki73311@gmail.com <br>
+            <i class="fas fa-phone"></i> 8688536367
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/mekala-akshay/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a> | 
+            <a href="https://github.com/AK3HAY"><i class="fab fa-github"></i> GitHub Profile</a>
+        </p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.add('visible');
+        });
+    </script>
+</body>
+</html>
