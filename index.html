@@ -3,87 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekala Akshay's Portfolio</title>
+    <title>Mekala Akshay | Tech Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <img src="images/my_pic.jpg" alt="My Image" class="profile-image">
-        <h1>Mekala Akshay</h1>
-        <p>
-            <i class="fas fa-envelope"></i> akki73311@gmail.com | 
-            <i class="fas fa-phone"></i> 8688536367
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/mekala-akshay/"><i class="fab fa-linkedin"></i></a> | 
-            <a href="https://github.com/AK3HAY"><i class="fab fa-github"></i></a>
-        </p>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Akshay Mekala</a>
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#work-samples">Work Samples</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact Information</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="images/my_pic.jpg" alt="Mekala Akshay" class="hero-image">
+                <h1 class="hero-title">Mekala Akshay</h1>
+                <h3 class="hero-subtitle">Crafting Innovative Solutions with Code and Data</h3>
+                <p class="hero-description">
+                    A passionate CSE student exploring the worlds of App Development, Data Analytics, and Software Innovation.
+                </p>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AK3HAY" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://drive.google.com/file/d/1P5dgPBDmrHKUE3lGyNtqAaDjJNC4a_Wa/view?usp=sharing" target="_blank" class="btn btn-secondary">Download Resume</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="introduction" class="section">
-        <h2><i class="fas fa-user"></i> Introduction</h2>
-        <p>B.Tech CSE Student | Data Analytics Enthusiast | Python & Power BI Learner | Passionate About AI & Software Innovation</p>
-    </section>
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My Introduction</span>
+            <div class="about-container container">
+                <p>
+                    I am a third-year B.Tech Computer Science and Engineering student with a strong passion for app development, data analytics, and software innovation. Skilled in <strong>Flutter, Dart, Power BI, and Python</strong>, I have proven experience in designing college apps and winning awards at project expos. I thrive on leading academic projects, collaborating with teams, and delivering impactful presentations. I am committed to advancing my expertise in mobile development and data-driven technologies to drive innovation in the tech industry.
+                </p>
+            </div>
+        </section>
 
-    <section id="work-samples" class="section">
-        <h2><i class="fas fa-laptop-code"></i> Work Samples</h2>
-        <div class="work-sample">
-            <h3>Internship focused on Power BI</h3>
-            <img src="images/internship.jpg" alt="Internship focused on Power BI" class="work-sample-image">
-            <p>Company: CODTECH IT SOLUTIONS </p>
-            <p>Date: August 23, 2024 – September 23, 2024</p>
-            <p>Tools Used: Power BI</p>
-            <p>Description: Gained hands-on experience in data visualization and analytics.</p>
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <span class="section-subtitle">My Recent Work</span>
+            <div class="project-grid container">
+                <div class="project-card">
+                    <img src="images/seat_reserve.jpg" alt="Seat Reserve Bus Booking App" class="project-img">
+                    <div class="project-data">
+                        <h3 class="project-title">Seat Reserve - Bus Booking App</h3>
+                        <p class="project-company">Personal Project • 2025</p>
+                        <p class="project-description">Built a cross-platform bus booking app using Flutter, featuring real-time seat selection, user authentication, and data persistence with a Firebase backend.</p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="https://github.com/AK3HAY" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/internship.jpg" alt="Power BI Dashboard" class="project-img">
+                    <div class="project-data">
+                        <h3 class="project-title">Data Analytics Internship</h3>
+                        <p class="project-company">CODTECH IT SOLUTIONS (Aug 2024 – Sep 2024)</p>
+                        <p class="project-description">Developed interactive dashboards to analyze business metrics, gaining hands-on experience in data transformation, visualization, and reporting with Power BI.</p>
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Data Visualization</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/tic_tac_toe.jpg" alt="Tic Tac Toe Game" class="project-img">
+                    <div class="project-data">
+                        <h3 class="project-title">Tic Tac Toe Game</h3>
+                        <p class="project-company">Tech Sign Solutions (Aug 2024 - Sep 2024)</p>
+                        <p class="project-description">Engineered a fully responsive and interactive Tic Tac Toe game with a clean UI, win-detection logic, and a reset game feature using core web technologies.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/AK3HAY" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">My Technical Expertise</span>
+            <div class="skills-container container">
+                <div class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                <div class="skill-item"><i class="fas fa-code"></i> Dart</div>
+                <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-item"><i class="fas fa-chart-bar"></i> Power BI</div>
+                <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <h2 class="section-title">Resume</h2>
+            <span class="section-subtitle">My Professional Journey</span>
+            <div class="resume-container container">
+                <p>For a detailed look at my qualifications, experience, and education, please feel free to download my resume.</p>
+                <a href="https://drive.google.com/file/d/1P5dgPBDmrHKUE3lGyNtqAaDjJNC4a_Wa/view?usp=sharing" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download My Resume
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container container">
+            <h2 class="footer-title">Let's Connect!</h2>
+            <p class="footer-description">I'm currently seeking internship opportunities and am always open to new collaborations. Feel free to reach out!</p>
+            <div class="footer-contact-info">
+                <p><i class="fas fa-envelope"></i> akki73311@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +91 8688536367</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AK3HAY" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-copy">&#169; 2024 Mekala Akshay. All rights reserved.</p>
         </div>
-        <div class="work-sample">
-            <h3>Tic Tac Toe Game</h3>
-            <img src="images/tic_tac_toe.jpg" alt="Tic Tac Toe Game" class="work-sample-image">
-            <p>Company: Tech Sign Solutions</p>
-            <p>Duration: August 19, 2024 - September 6, 2024</p>
-            <p>Tools Used: HTML, CSS, JavaScript</p>
-            <p>Description: Developed a classic Tic Tac Toe game.</p>
-        </div>
-        <div class="work-sample">
-            <h3>Supermarket Billing System</h3>
-            <img src="images/supermarkey.jpg" alt="Supermarket Billing System" class="work-sample-image">
-            <p>Description: Developed a Java program for a supermarket billing system.</p>
-        </div>
-    </section>
-
-    <section id="resume" class="section">
-        <h2><i class="fas fa-file-alt"></i> Resume</h2>
-        <p>You can view and download my resume here: <a href="https://drive.google.com/file/d/1bbN-6n503dQd49l2OeCiuyScpVskLEGj/view?usp=sharing" target="_blank">Download Resume</a></p>
-        <h3>Professional Summary</h3>
-        <p>Third-year B.Tech student specializing in Computer Science and Engineering. I have hands-on experience in academic projects, team collaborations, and classroom presentations. Currently, I am expanding my skills in Power BI and Python, aiming to leverage my analytical and technical expertise to drive innovation in the tech industry.</p>
-    </section>
-
-    <footer id="contact" class="section">
-        <h2><i class="fas fa-address-book"></i> Contact Information</h2>
-        <p>
-            <i class="fas fa-envelope"></i> akki73311@gmail.com <br>
-            <i class="fas fa-phone"></i> 8688536367
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/mekala-akshay/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a> | 
-            <a href="https://github.com/AK3HAY"><i class="fab fa-github"></i> GitHub Profile</a>
-        </p>
     </footer>
 
-    <script>
-        document.querySelectorAll('.section').forEach(section => {
-            section.classList.add('visible');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
