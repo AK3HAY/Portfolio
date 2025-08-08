@@ -1,13 +1,41 @@
-// Smooth scrolling to sections
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+const sections = document.querySelectorAll('.section');
 
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
 
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, observerOptions);
+
+sections.forEach(section => {
+    sectionObserver.observe(section);
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+const allSections = document.querySelectorAll('section[id]');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    allSections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+        if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active-link');
+        }
     });
 });
