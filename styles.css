@@ -212,9 +212,10 @@ img {
 }
 
 .project-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-card {
@@ -225,6 +226,7 @@ img {
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
+    width: 305px;
 }
 
 .project-card:hover {
@@ -284,6 +286,7 @@ img {
     align-items: center;
     gap: 0.5rem;
     transition: gap 0.3s;
+    margin-top: auto;
 }
 
 .project-button:hover {
