@@ -3,99 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mekala Akshay | Digital Architect</title>
-    
+    <meta name="description" content="Mekala Akshay — B.Tech Computer Science student focused on Flutter, software development, Firebase, Python and data-driven solutions.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Mekala Akshay | Software Developer</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <link rel="stylesheet" href="styles.css">
-
-    <!-- The <style> block has been removed from here. Its styles should be moved to your styles.css file. -->
 </head>
 <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
 
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <div id="preloader">
+    <div id="preloader" aria-hidden="true">
         <div class="loader"></div>
     </div>
 
     <header class="header">
-        <nav class="nav container">
-            <a href="#" class="nav-logo">Akshay<span class="logo-accent">.</span>Mekala</a>
-            <ul class="nav-list">
+        <nav class="nav container" aria-label="Primary navigation">
+            <a href="#top" class="nav-logo">Akshay<span class="logo-accent">.</span>Mekala</a>
+
+            <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-list" id="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#internships" class="nav-link">Internships</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#internships" class="nav-link">Experience</a></li>
                 <li><a href="#resume" class="nav-link">Resume</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero section">
-            <div id="particles-js"></div>
-            <div class="hero-content">
+    <main id="top">
+        <section class="hero section" aria-labelledby="hero-title">
+            <div id="particles-js" aria-hidden="true"></div>
+            <div class="hero-content container">
+                <div class="hero-badge anim-fade-in">Available for opportunities</div>
                 <img src="images/my_pic.jpg" alt="Mekala Akshay" class="hero-image anim-fade-in">
-                <h1 class="hero-title anim-fade-in-up" style="animation-delay: 0.2s;">Mekala Akshay</h1>
-                <h3 class="hero-subtitle">
-                    <span id="typing-effect"></span>
-                </h3>
-                <p class="hero-description anim-fade-in-up" style="animation-delay: 0.6s;">
-                    A passionate CSE student exploring the worlds of App Development and Software Innovation.
+                <h1 id="hero-title" class="hero-title anim-fade-in-up">Mekala Akshay</h1>
+                <h2 class="hero-subtitle anim-fade-in-up"><span id="typing-effect"></span></h2>
+                <p class="hero-description anim-fade-in-up">
+                    B.Tech Computer Science student passionate about building practical mobile, web and software solutions with Flutter, Python and Firebase.
                 </p>
-                <div class="hero-socials anim-fade-in-up" style="animation-delay: 0.8s;">
-                    <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/AK3HAY" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+
+                <div class="hero-socials anim-fade-in-up">
+                    <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AK3HAY" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:akki73311@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="hero-buttons anim-fade-in-up" style="animation-delay: 1s;">
-                    <a href="#projects" class="btn btn-primary">Explore My Work</a>
-                    <a href="https://drive.google.com/file/d/19xX6oFxidht__R9DBkpatYzlUAZ3Ltrv/view?usp=sharing" target="_blank" class="btn btn-secondary">Download Resume</a>
+
+                <div class="hero-buttons anim-fade-in-up">
+                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-down"></i></a>
+                    <a href="https://drive.google.com/file/d/19xX6oFxidht__R9DBkpatYzlUAZ3Ltrv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download Resume <i class="fas fa-file-arrow-down"></i></a>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section">
-            <h2 class="section-title anim-reveal">About Me</h2>
+        <section id="about" class="section" aria-labelledby="about-title">
+            <h2 id="about-title" class="section-title anim-reveal">About Me</h2>
             <span class="section-subtitle anim-reveal">My Introduction</span>
-            <div class="about-container container anim-reveal">
-                <p>
-                    Final-year B.Tech CSE student passionate about mobile app development and software innovation, with strong skills in Flutter, Dart, Python,
-and Python Full Stack. Experienced in designing, developing, and deploying real-time campus applications, and recognized for effective
-collaboration and impactful project presentations. Focused on building scalable, user-friendly, and high-quality software solutions.                </p>
+            <div class="about-layout container">
+                <div class="about-container anim-reveal">
+                    <p>
+                        I am a B.Tech Computer Science student passionate about mobile app development and software innovation, with strong skills in Flutter, Dart, Python, and Python Full Stack. I enjoy designing and developing practical applications that solve real-world problems, with experience building campus-focused solutions and working with real-time data. I am focused on creating scalable, user-friendly, and high-quality software.
+                    </p>
+                </div>
+                <div class="about-highlights anim-reveal">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div><strong>B.Tech CSE</strong><span>Computer Science</span></div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-mobile-screen-button"></i>
+                        <div><strong>Primary Focus</strong><span>Flutter & App Development</span></div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-code"></i>
+                        <div><strong>Development</strong><span>Mobile, Web & Software</span></div>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-rocket"></i>
+                        <div><strong>Career Goal</strong><span>Software Engineering</span></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- === CORRECTED PROJECTS SECTION START === -->
-        <section id="projects" class="section">
-            <h2 class="section-title anim-reveal">Projects</h2>
-            <span class="section-subtitle anim-reveal">My Recent Work</span>
-            <div class="container">
-                <!-- All project cards are now inside a single, unified grid container -->
-                <div class="project-grid">
-                    <div class="project-card anim-reveal">
-                        <div class="project-card-inner">
-                            <div class="project-card-glare"></div>
-                            <img src="images/gkec_logo.png" alt="GKCE CONNECT App" class="project-img">
-                            <div class="project-data">
-                                <h3 class="project-title">GKCE CONNECT - College App</h3>
-                                <p class="project-company">Team TechTitans • 2025</p>
-                                <p class="project-description">College transport and communication app with bus booking, live tracking, admin panel, and notifications using Flutter and Firebase.</p>
-                                <div class="project-tags">
-                                    <span>Flutter</span>
-                                    <span>Dart</span>
-                                    <span>Firebase</span>
-                                </div>
-                                <a href="https://github.com/AK3HAY/GKCE" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <h2 id="skills-title" class="section-title anim-reveal">Skills</h2>
+            <span class="section-subtitle anim-reveal">My Technical Stack</span>
+            <div class="skills-groups container">
+                <div class="skills-group anim-reveal">
+                    <h3><i class="fas fa-terminal"></i> Languages</h3>
+                    <div class="skills-container">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fas fa-code"></i> Dart</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
                     </div>
+                </div>
+                <div class="skills-group anim-reveal">
+                    <h3><i class="fas fa-layer-group"></i> Development</h3>
+                    <div class="skills-container">
+                        <div class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-item"><i class="fas fa-fire"></i> Firebase</div>
+                    </div>
+                </div>
+                <div class="skills-group anim-reveal">
+                    <h3><i class="fas fa-screwdriver-wrench"></i> Tools & Data</h3>
+                    <div class="skills-container">
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                        <div class="skill-item"><i class="fas fa-chart-bar"></i> Power BI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <h2 id="projects-title" class="section-title anim-reveal">Projects</h2>
+            <span class="section-subtitle anim-reveal">Featured & Recent Work</span>
+            <div class="container">
+                <div class="featured-project anim-reveal">
+                    <div class="featured-project-image">
+                        <img src="images/gkec_logo.png" alt="GKCE CONNECT College App">
+                        <span class="featured-label"><i class="fas fa-star"></i> Featured Project</span>
+                    </div>
+                    <div class="featured-project-data">
+                       
+                        <h3 class="featured-project-title">GKCE CONNECT - College App</h3>
+                        <p class="featured-project-description">A college transport and communication application designed to simplify campus travel and communication through bus booking, live tracking, admin management and notifications.</p>
+                        <div class="feature-list">
+                            <span><i class="fas fa-bus"></i> Bus Booking</span>
+                            <span><i class="fas fa-location-dot"></i> Live Tracking</span>
+                            <span><i class="fas fa-bell"></i> Notifications</span>
+                            <span><i class="fas fa-user-shield"></i> Admin Panel</span>
+                        </div>
+                        <div class="project-tags">
+                            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                        </div>
+                        <a href="https://github.com/AK3HAY/GKCE" class="project-button" target="_blank" rel="noopener noreferrer">View Code <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-grid">
                     <div class="project-card anim-reveal">
                         <div class="project-card-inner">
                             <div class="project-card-glare"></div>
@@ -104,12 +162,8 @@ collaboration and impactful project presentations. Focused on building scalable,
                                 <h3 class="project-title">Kushi - Food Delivery with Voice Chat</h3>
                                 <p class="project-company">Personal Project • 2025</p>
                                 <p class="project-description">Food delivery app with chatbot-driven ordering and payment system.</p>
-                                <div class="project-tags">
-                                    <span>Flutter</span>
-                                    <span>Voice AI</span>
-                                    <span>Firebase</span>
-                                </div>
-                                <a href="https://github.com/AK3HAY/KUSHI" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                                <div class="project-tags"><span>Flutter</span><span>Voice AI</span><span>Firebase</span></div>
+                                <a href="https://github.com/AK3HAY/KUSHI" class="project-button" target="_blank" rel="noopener noreferrer">View Code <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -121,29 +175,22 @@ collaboration and impactful project presentations. Focused on building scalable,
                                 <h3 class="project-title">DO IT - To-Do List App</h3>
                                 <p class="project-company">Personal Project • 2025</p>
                                 <p class="project-description">Simple To-Do List app for personal task tracking with Hive database.</p>
-                                <div class="project-tags">
-                                    <span>Flutter</span>
-                                    <span>Hive</span>
-                                    <span>Dart</span>
-                                </div>
-                                <a href="https://github.com/AK3HAY/DO-IT" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                                <div class="project-tags"><span>Flutter</span><span>Hive</span><span>Dart</span></div>
+                                <a href="https://github.com/AK3HAY/DO-IT" class="project-button" target="_blank" rel="noopener noreferrer">View Code <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card anim-reveal">
                         <div class="project-card-inner">
                             <div class="project-card-glare"></div>
+                             <p class="project-company">Team TechTitans • 2025</p>
                             <img src="images/seat_reserve.jpg" alt="Seat Reserve Bus Booking App" class="project-img">
                             <div class="project-data">
                                 <h3 class="project-title">Seat Reserve - Bus Booking App</h3>
                                 <p class="project-company">Personal Project • 2025</p>
                                 <p class="project-description">Cross-platform bus booking app with seat selection and Firebase backend.</p>
-                                <div class="project-tags">
-                                    <span>Flutter</span>
-                                    <span>Dart</span>
-                                    <span>Firebase</span>
-                                </div>
-                                <a href="https://play.google.com/store/apps/details?id=com.techtitans.seatbooking" class="project-button" target="_blank">Playstore <i class="fas fa-arrow-right"></i></a>
+                                <div class="project-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                                <a href="https://play.google.com/store/apps/details?id=com.techtitans.seatbooking" class="project-button" target="_blank" rel="noopener noreferrer">Play Store <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -155,112 +202,72 @@ collaboration and impactful project presentations. Focused on building scalable,
                                 <h3 class="project-title">Tic Tac Toe Game</h3>
                                 <p class="project-company">Tech Sign Solutions • 2024</p>
                                 <p class="project-description">Interactive Tic Tac Toe game with clean UI and win-detection logic.</p>
-                                <div class="project-tags">
-                                    <span>HTML</span>
-                                    <span>CSS</span>
-                                    <span>JavaScript</span>
-                                </div>
-                                <a href="https://github.com/AK3HAY/TSS-22KB1A0598" class="project-button" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                                <a href="https://github.com/AK3HAY/TSS-22KB1A0598" class="project-button" target="_blank" rel="noopener noreferrer">View Code <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- === CORRECTED PROJECTS SECTION END === -->
 
-
-        <section id="internships" class="section">
-            <h2 class="section-title anim-reveal">Internships</h2>
-            <span class="section-subtitle anim-reveal">Professional Experience</span>
-            <div class="container">
-                <!-- You can apply the same .project-grid class here for consistency -->
-                <div class="project-grid">
-                    <div class="project-card anim-reveal">
-                        <div class="project-card-inner">
-                            <div class="project-card-glare"></div>
-                            <img src="images/internship.jpg" alt="App Development Internship" class="project-img">
-                            <div class="project-data">
-                                <h3 class="project-title">App Development</h3>
-                                <p class="project-company">2 Months • Stipend Based Internship</p>
-                                <p class="project-description">Worked on real-world projects, enhanced technical and teamwork skills, contributed to development tasks.</p>
-                                <div class="project-tags">
-                                    <span>Development</span>
-                                    <span>Collaboration</span>
-                                </div>
-                            </div>
-                        </div>
+        <section id="internships" class="section" aria-labelledby="experience-title">
+            <h2 id="experience-title" class="section-title anim-reveal">Experience</h2>
+            <span class="section-subtitle anim-reveal">Internships & Professional Exposure</span>
+            <div class="timeline container">
+                <div class="timeline-item anim-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-period">2 Months</span>
+                        <h3>App Development Internship</h3>
+                        <p class="project-company">Stipend Based Internship</p>
+                        <p>Worked on real-world development tasks, strengthened technical and teamwork skills, and contributed to application development activities.</p>
+                        <div class="project-tags"><span>Development</span><span>Collaboration</span></div>
                     </div>
-                    <div class="project-card anim-reveal">
-                        <div class="project-card-inner">
-                            <div class="project-card-glare"></div>
-                            <img src="images/internship-2.jpg" alt="Power BI Internship" class="project-img">
-                            <div class="project-data">
-                                <h3 class="project-title">Online Internship</h3>
-                                <p class="project-company">2 Months • Power BI internship</p>
-                                <p class="project-description">Gained practical experience in Power BI and learn How it.</p>
-                                <div class="project-tags">
-                                    <span>Power BI</span>
-                                    <span>Industry</span>
-                                    <span>Projects</span>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="timeline-item anim-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-period">2 Months</span>
+                        <h3>Power BI Internship</h3>
+                        <p class="project-company">Online Internship</p>
+                        <p>Gained practical exposure to Power BI, data visualization and project-based industry workflows.</p>
+                        <div class="project-tags"><span>Power BI</span><span>Data Visualization</span><span>Projects</span></div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="skills" class="section">
-            <h2 class="section-title anim-reveal">Skills</h2>
-            <span class="section-subtitle anim-reveal">My Technical Arsenal</span>
-            <div class="skills-container container anim-reveal">
-                <div class="skill-item anim-reveal"><i class="fas fa-mobile-alt"></i> Flutter</div>
-                <div class="skill-item anim-reveal"><i class="fas fa-code"></i> Dart</div>
-                <div class="skill-item anim-reveal"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-item anim-reveal"><i class="fas fa-chart-bar"></i> Power BI</div>
 
-                <div class="skill-item anim-reveal"><i class="fab fa-html5"></i> HTML5</div>
-                <div class="skill-item anim-reveal"><i class="fab fa-css3-alt"></i> CSS3</div>
-
-                <div class="skill-item anim-reveal"><i class="fas fa-database"></i> SQL</div>
-                <div class="skill-item anim-reveal"><i class="fab fa-git-alt"></i> Git & GitHub</div>
-                <div class="skill-item anim-reveal"><i class="fas fa-fire"></i> Firebase</div>
-            </div>
-        </section>
-
-        <section id="resume" class="section">
-            <h2 class="section-title anim-reveal">Resume</h2>
+        <section id="resume" class="section" aria-labelledby="resume-title">
+            <h2 id="resume-title" class="section-title anim-reveal">Resume</h2>
             <span class="section-subtitle anim-reveal">My Professional Journey</span>
             <div class="resume-container container anim-reveal">
-                <p>For a detailed look at my qualifications, experience, and education, please feel free to download my resume.</p>
-                <a href="https://drive.google.com/file/d/19xX6oFxidht__R9DBkpatYzlUAZ3Ltrv/view?usp=sharing" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-download"></i> Download My Resume
-                </a>
+                <div class="resume-icon"><i class="fas fa-file-lines"></i></div>
+                <h3>Want to know more about my experience?</h3>
+                <p>For a detailed look at my qualifications, projects, experience and education, view my resume.</p>
+                <a href="https://drive.google.com/file/d/19xX6oFxidht__R9DBkpatYzlUAZ3Ltrv/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fas fa-download"></i> View My Resume</a>
             </div>
         </section>
     </main>
 
     <footer id="contact" class="footer">
         <div class="footer-container container">
-            <h2 class="footer-title">Let's Connect!</h2>
-            <p class="footer-description">Akshay Mekala | Open to internships and full-time opportunities</p>
+            <span class="footer-eyebrow">GET IN TOUCH</span>
+            <h2 class="footer-title">Let's build something together.</h2>
+            <p class="footer-description">Open to software engineering, app development and other technology opportunities.</p>
             <div class="footer-contact-info">
-                <p><i class="fas fa-envelope"></i> akki73311@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +91 8688536367</p>
+                <a href="mailto:akki73311@gmail.com"><i class="fas fa-envelope"></i> akki73311@gmail.com</a>
+                <a href="tel:+918688536367"><i class="fas fa-phone"></i> +91 8688536367</a>
             </div>
             <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/AK3HAY" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mekala-akshay/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AK3HAY" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
-            <p class="footer-copy">&#169; 2024 Mekala Akshay. All rights reserved.</p>
+            <p class="footer-copy">© 2026 Mekala Akshay. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
-    <!-- Assuming you have a particles.js script file -->
-    <script src="particles.min.js"></script>
 </body>
 </html>
-
-
